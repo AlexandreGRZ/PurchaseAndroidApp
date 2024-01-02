@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Grocery Online Store</string>
+    <string name="action_settings">Français</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="cart_name">Cart</string>
+    <string name="buy">Buy</string>
+    <string name="empty_cart">Empty Cart</string>
+    <string name="Withdraw_cart">Remove from cart</string>
+    <string name="pay">Pay</string>
+    <string name="logout">Logout</string>
+    <string name="username_hint">Username</string>
+    <string name="quantity_hint">Quantity</string>
+    <string name="password_hint">Password</string>
+    <string name="login">Login</string>
+    <string name="Total_To_buy">Total to Buy</string>
+    <string name="NotSignInYet">Not sign in already ?</string>
+    <string name="SignIn">Sign In</string>
+</resources>

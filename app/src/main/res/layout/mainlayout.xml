@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".Activity.Main.MainActivity">
+
+    <!-- Section de détails de l'article -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+    >
+
+        <ImageView
+                android:id="@+id/imageViewArticle"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/bananes" />
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="25dp">
+
+            <TextView
+                    android:id="@+id/textViewArticleName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Article Name" />
+
+            <TextView
+                    android:id="@+id/textViewArticlePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Article Price" />
+
+            <TextView
+                    android:id="@+id/textViewArticleQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Article Quantity" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="&lt;&lt;&lt;"
+                        android:id="@+id/PreviousBtn" />
+
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text=">>>"
+                        android:id="@+id/NextBtn" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="25dp"
+                  android:layout_marginBottom="50dp"
+                  android:layout_marginLeft="25dp"
+    >
+
+        <EditText
+                android:id="@+id/EditTextQuantity"
+                android:layout_width="100dp"
+                  android:padding="10dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginRight="150dp"
+                  android:inputType="number"
+                  android:hint="@string/quantity_hint"
+
+
+
+            />
+
+        <Button
+                android:id="@+id/btnAcheter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buy"
+                android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Section du panier -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+
+        <!-- Liste des articles dans le panier -->
+        <ListView
+                android:id="@+id/listViewPanier"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+        />
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+        >
+
+            <Button
+                    android:id="@+id/btnRetirer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Withdraw_cart"
+                    android:layout_gravity="center" />
+            <Button
+                    android:id="@+id/btnRetirerTout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="@string/empty_cart"
+                    android:layout_gravity="center" />
+        </LinearLayout>
+
+        <!-- Total à payer -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/textViewTotalPayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Total_To_buy" />
+
+            <TextView
+                    android:id="@+id/textViewCartTotalPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+        <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="@string/pay"
+                />
+
+    </LinearLayout>
+
+</LinearLayout>

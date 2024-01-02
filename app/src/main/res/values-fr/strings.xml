@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Le Maraicher en Ligne</string>
+    <string name="action_settings">English</string>
+    <string name="next">Suivant</string>
+    <string name="previous">Précédent</string>
+    <string name="cart_name">Panier</string>
+    <string name="buy">Acheter</string>
+    <string name="empty_cart">Vider le panier</string>
+    <string name="Withdraw_cart">enlever du panier</string>
+    <string name="Total_To_buy">Totale à payer</string>
+    <string name="pay">Payer</string>
+    <string name="logout">Déconnexion</string>
+    <string name="username_hint">Nom d\'utilisateur</string>
+    <string name="quantity_hint">Quantité</string>
+    <string name="password_hint">Mot de passe</string>
+    <string name="login">Se Connecter</string>
+    <string name="NotSignInYet">Pas encore inscrit ?</string>
+    <string name="SignIn">Inscription</string>
+</resources>

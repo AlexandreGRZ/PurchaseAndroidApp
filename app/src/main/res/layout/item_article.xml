@@ -1,0 +1,27 @@
+<!-- res/layout/item_article.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="8dp">
+
+    <TextView
+            android:id="@+id/textViewArticleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom de l'article" />
+
+    <TextView
+            android:id="@+id/textViewArticlePrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prix de l'article" />
+
+    <TextView
+            android:id="@+id/textViewArticleQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantité de l'article" />
+
+</LinearLayout>
